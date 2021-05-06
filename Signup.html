@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+
+    <div class=form-row>
+      <div class="form-group col-md-6">
+        <img height="600" width="700" class="rounded float-left" src="kitchen.jpg" alt="">
+      </div>
+      <div class="form-group col-md-6">
+        <u><h1>Welcome To SIMO Meals!</h1></u>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="First" placeholder="First Name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="Last" placeholder="Last Name" required>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <input type="number" class="form-control" id="Last" placeholder="+91" disabled>
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="Last" placeholder="Contact Number"  maxlength="10" required>
+            </div>
+            <div class="form-group col-md-2">
+              <input type="number" class="form-control" id="Last" placeholder="+91" disabled>
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" id="Last" placeholder="Alternate Number"  maxlength="10" required>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Email ID" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group col-md-6">
+            <input type="password" class="form-control" id="Password1" placeholder="Password" required>
+          </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Address Line 1">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Address Line 2">
+          </div>
+          <br>
+          <div class="form-row">
+          <div class="form-group col-md-6">
+            <select class="form-control" id="exampleFormControlSelect1" required>
+              <option>City</option>
+              <option>Mumbai</option>
+              <option>Pune</option>
+              <option>Banglore</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="Pin code" maxlength="6" required>
+
+          </div>
+        </div>
+        <br>
+        <div class="text-center">
+          <a href="#"><button type="submit" class="btn btn-warning btn-lg">Sign Up</button></a>
+        </div>
+
+        <form method="post" name="form1">
+          <select style="background-color: #ffffa0" name="country" onchange="getState(this.value)">
+             <option>Select Country</option>
+             <option value="223">USA</option>
+             <option value="224">Canada</option>
+             <option value="225">England</option>
+             <option value="226">Ireland</option>
+          </select>
+       
+          <select style="background-color: #ffffa0" name="state">
+             <option>Select Country First</option>
+          </select>
+       
+          <input type="text" name="othstate" value="" class="textBox" style="display: none;">
+       </form>
+       
+       $(function() {
+           $('#country').change( function() {
+               var val = $(this).val();
+               if (val == 223 || val == 224) {
+                   $('#othstate').val('').hide();
+                   $.ajax({
+                      url: 'findState.php',
+                      dataType: 'html',
+                      data: { country : val },
+                      success: function(data) {
+                          $('#state').html( data );
+                      }
+                   });
+               }
+               else {
+                  $('#state').val('').hide();
+                  $('#othstate').show();
+               }
+           });
+       });
+        </form>
+      </div>
+  </div>
+
+  </body>
+</html>

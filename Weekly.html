@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="weekly.css">
+    <title>Weekly Schedule</title>
+  </head>
+  <body>
+    <script>
+    function getValue() {
+
+      var a = MondayLunch();
+      var b = MondayDinner();
+      var c = TuesdayLunch();
+      var d = TuesdayDinner();
+      var e = WednesdayLunch();
+      var f = WednesdayDinner();
+      var g = ThursdayLunch();
+      var h = ThursdayDinner();
+      var i = FridayLunch();
+      var j = FridayDinner();
+      var k = SaturdayLunch();
+      var l = SaturdayDinner();
+      var m = SundayLunch();
+      var n = SundayDinner();
+
+      var totalValue;
+      totalValue = a + b + c + d + e + f + g + h + i + j + k + l + m + n;
+
+      alert("Your total price is: Rs. " + totalValue)
+    }
+
+
+    function MondayLunch() {
+      var aa = document.getElementsByName('exampleRadios');
+      var money;
+      var cash = 0;
+       for (var i = 0; i < aa.length; i++) {
+         if(aa[i].checked){
+           money = aa[i].value;
+         }
+       }
+       if(money=="option1"){
+           cash = 199;
+         }
+         else if (money=="option2") {
+           cash = 299;
+         }
+         else if (money=="option3") {
+           cash = 249;
+         }
+         else {
+           cash = 0;
+         }
+       return cash;
+    }
+
+
+    function MondayDinner() {
+      var bb = document.getElementsByName('Radios');
+      var moneyb;
+      var cashb = 0;
+       for (var i = 0; i < bb.length; i++) {
+         if(bb[i].checked){
+           moneyb = bb[i].value;
+         }
+       }
+       if(moneyb=="option1"){
+           cashb = 199;
+         }
+         else if (moneyb=="option2") {
+           cashb = 299;
+         }
+         else if (moneyb=="option3") {
+           cashb = 249;
+         }
+         else {
+           cashb = 0;
+         }
+       return cashb;
+     }
+
+     function TuesdayLunch() {
+       var cc = document.getElementsByName('tuesday');
+       var moneyc;
+       var cashc = 0;
+        for (var i = 0; i < cc.length; i++) {
+          if(cc[i].checked){
+            moneyc = cc[i].value;
+          }
+        }
+        if(moneyc=="option1"){
+            cashc = 199;
+          }
+          else if (moneyc=="option2") {
+            cashc = 299;
+          }
+          else if (moneyc=="option3") {
+            cashc = 249;
+          }
+          else {
+            cashc = 0;
+          }
+        return cashc;
+      }
+
+      function TuesdayDinner() {
+        var dd = document.getElementsByName('tuesdayRadios');
+        var moneyd;
+        var cashd = 0;
+         for (var i = 0; i < dd.length; i++) {
+           if(dd[i].checked){
+             moneyd = dd[i].value;
+           }
+         }
+         if(moneyd=="option1"){
+             cashd = 199;
+           }
+           else if (moneyd=="option2") {
+             cashd = 299;
+           }
+           else if (moneyd=="option3") {
+             cashd = 249;
+           }
+           else {
+             cashd = 0;
+           }
+         return cashd;
+       }
+
+       function WednesdayLunch() {
+         var ee = document.getElementsByName('wednesday');
+         var moneye;
+         var cashe = 0;
+          for (var i = 0; i < ee.length; i++) {
+            if(ee[i].checked){
+              moneye = ee[i].value;
+            }
+          }
+          if(moneye=="option1"){
+              cashe = 199;
+            }
+            else if (moneye=="option2") {
+              cashe = 299;
+            }
+            else if (moneye=="option3") {
+              cashe = 249;
+            }
+            else {
+              cashe = 0;
+            }
+          return cashe;
+        }
+
+        function WednesdayDinner() {
+          var ff = document.getElementsByName('wednesdayRadios');
+          var moneyf;
+          var cashf = 0;
+           for (var i = 0; i < ff.length; i++) {
+             if(ff[i].checked){
+               moneyf = ff[i].value;
+             }
+           }
+           if(moneyf=="option1"){
+               cashf = 199;
+             }
+             else if (moneyf=="option2") {
+               cashf = 299;
+             }
+             else if (moneyf=="option3") {
+               cashf = 249;
+             }
+             else {
+               cashf = 0;
+             }
+           return cashf;
+         }
+
+         function ThursdayLunch() {
+           var gg = document.getElementsByName('thursday');
+           var moneyg;
+           var cashg = 0;
+            for (var i = 0; i < gg.length; i++) {
+              if(gg[i].checked){
+                moneyg = gg[i].value;
+              }
+            }
+            if(moneyg=="option1"){
+                cashg = 199;
+              }
+              else if (moneyg=="option2") {
+                cashg = 299;
+              }
+              else if (moneyg=="option3") {
+                cashg = 249;
+              }
+              else {
+                cashg = 0;
+              }
+            return cashg;
+          }
+
+          function ThursdayDinner() {
+            var hh = document.getElementsByName('thursdayRadios');
+            var moneyh;
+            var cashh = 0;
+             for (var i = 0; i < hh.length; i++) {
+               if(hh[i].checked){
+                 moneyh = hh[i].value;
+               }
+             }
+             if(moneyh=="option1"){
+                 cashh = 199;
+               }
+               else if (moneyh=="option2") {
+                 cashh = 299;
+               }
+               else if (moneyh=="option3") {
+                 cashh = 249;
+               }
+               else {
+                 cashh = 0;
+               }
+             return cashh;
+           }
+
+
+           function FridayLunch() {
+             var ii = document.getElementsByName('friday');
+             var moneyi;
+             var cashi = 0;
+              for (var i = 0; i < ii.length; i++) {
+                if(ii[i].checked){
+                  moneyi = ii[i].value;
+                }
+              }
+              if(moneyi=="option1"){
+                  cashi = 199;
+                }
+                else if (moneyi=="option2") {
+                  cashi = 299;
+                }
+                else if (moneyi=="option3") {
+                  cashi = 249;
+                }
+                else {
+                  cashi = 0;
+                }
+              return cashi;
+            }
+
+
+            function FridayDinner() {
+              var jj = document.getElementsByName('fridayRadios');
+              var moneyj;
+              var cashj = 0;
+               for (var i = 0; i < jj.length; i++) {
+                 if(jj[i].checked){
+                   moneyj = jj[i].value;
+                 }
+               }
+               if(moneyj=="option1"){
+                   cashj = 199;
+                 }
+                 else if (moneyj=="option2") {
+                   cashj = 299;
+                 }
+                 else if (moneyj=="option3") {
+                   cashj = 249;
+                 }
+                 else {
+                   cashj = 0;
+                 }
+               return cashj;
+             }
+
+
+             function SaturdayLunch() {
+               var kk = document.getElementsByName('saturday');
+               var moneyk;
+               var cashk = 0;
+                for (var i = 0; i < kk.length; i++) {
+                  if(kk[i].checked){
+                    moneyk = kk[i].value;
+                  }
+                }
+                if(moneyk=="option1"){
+                    cashk = 199;
+                  }
+                else if (moneyk=="option2") {
+                    cashk = 299;
+                  }
+                else if (moneyk=="option3") {
+                    cashk = 249;
+                  }
+                else {
+                    cashk = 0;
+                  }
+                return cashk;
+              }
+
+              function SaturdayDinner() {
+                var ll = document.getElementsByName('saturdayRadios');
+                var moneyl;
+                var cashl = 0;
+                 for (var i = 0; i < ll.length; i++) {
+                   if(ll[i].checked){
+                     moneyl = ll[i].value;
+                   }
+                 }
+                 if(moneyl=="option1"){
+                     cashl = 199;
+                   }
+                 else if (moneyl=="option2") {
+                     cashl = 299;
+                   }
+                 else if (moneyl=="option3") {
+                     cashl = 249;
+                   }
+                 else {
+                     cashl = 0;
+                   }
+                 return cashl;
+               }
+
+               function SundayLunch() {
+                 var mm = document.getElementsByName('sunday');
+                 var moneym;
+                 var cashm = 0;
+                  for (var i = 0; i < mm.length; i++) {
+                    if(mm[i].checked){
+                      moneym = mm[i].value;
+                    }
+                  }
+                  if(moneym=="option1"){
+                      cashm = 199;
+                    }
+                    else if (moneym=="option2") {
+                      cashm = 299;
+                    }
+                    else if (moneym=="option3") {
+                      cashm = 249;
+                    }
+                    else {
+                      cashm = 0;
+                    }
+                  return cashm;
+                }
+
+
+                function SundayDinner() {
+                  var nn = document.getElementsByName('sundayRadios');
+                  var moneyn;
+                  var cashn = 0;
+                   for (var i = 0; i < nn.length; i++) {
+                     if(nn[i].checked){
+                       moneyn = nn[i].value;
+                     }
+                   }
+                   if(moneyn=="option1"){
+                       cashn = 199;
+                     }
+                     else if (moneyn=="option2") {
+                       cashn = 299;
+                     }
+                     else if (moneyn=="option3") {
+                       cashn = 249;
+                     }
+                     else {
+                       cashn = 0;
+                     }
+                   return cashn;
+                 }
+    </script>
+    <div class="jumbotron jumbotron-special">
+      <h1 id="jumbo">My Weekly Plan</h1>
+    </div>
+    <br>
+    <div class="container jumbotron" id="back">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <i><h1>Monday</h1></i>
+          <ul>
+            <li>Lunch</li>
+            <ul>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                <label class="form-check-label" for="exampleRadios1">Veg Meal</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">Non Veg Meal</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                <label class="form-check-label" for="exampleRadios3">Egg Meal</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" checked>
+                  <label class="form-check-label" for="exampleRadios4">None</label>
+              </div>
+              </ul>
+              <br>
+              <br>
+              <li>Dinner</li>
+              <ul>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1">
+                  <label class="form-check-label" for="Radios1">Veg Meal</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2">
+                  <label class="form-check-label" for="Radios2">Non Veg Meal</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Radios" id="Radios3" value="option3">
+                  <label class="form-check-label" for="Radios3">Egg Meal</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Radios" id="Radios4" value="option4" checked>
+                  <label class="form-check-label" for="Radios4">None</label>
+                </div>
+                </ul>
+            </ul>
+          </div>
+
+
+          <div class="form-group col-md-4">
+            <i><h1>Tuesday</h1></i>
+            <ul>
+              <li>Lunch</li>
+              <ul>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="tuesday" id="tuesday1" value="option1">
+                  <label class="form-check-label" for="tuesday1">Veg Meal</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="tuesday" id="tuesday2" value="option2">
+                  <label class="form-check-label" for="tuesday2">Non Veg Meal</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="tuesday" id="tuesday3" value="option3">
+                  <label class="form-check-label" for="tuesday3">Egg Meal</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tuesday" id="tuesday4" value="option4" checked>
+                    <label class="form-check-label" for="tuesday4">None</label>
+                </div>
+                </ul>
+                <br>
+                <br>
+                <li>Dinner</li>
+                <ul>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tuesdayRadios" id="tuesdayRadios1" value="option1">
+                    <label class="form-check-label" for="tuesdayRadios1">Veg Meal</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tuesdayRadios" id="tuesdayRadios2" value="option2">
+                    <label class="form-check-label" for="tuesdayRadios2">Non Veg Meal</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tuesdayRadios" id="tuesdayRadios3" value="option3">
+                    <label class="form-check-label" for="tuesdayRadios3">Egg Meal</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tuesdayRadios" id="tuesdayRadios4" value="option4" checked>
+                    <label class="form-check-label" for="tuesdayRadios4">None</label>
+                  </div>
+                  </ul>
+              </ul>
+            </div>
+
+
+            <div class="form-group col-md-4">
+              <i><h1>Wednesday</h1></i>
+              <ul>
+                <li>Lunch</li>
+                <ul>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="wednesday" id="wednesday1" value="option1">
+                    <label class="form-check-label" for="wednesday1">Veg Meal</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="wednesday" id="wednesday2" value="option2">
+                    <label class="form-check-label" for="wednesday2">Non Veg Meal</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="wednesday" id="wednesday3" value="option3">
+                    <label class="form-check-label" for="wednesday3">Egg Meal</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="wednesday" id="wednesday4" value="option4" checked>
+                      <label class="form-check-label" for="wednesday4">None</label>
+                  </div>
+                  </ul>
+                  <br>
+                  <br>
+                  <li>Dinner</li>
+                  <ul>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="wednesdayRadios" id="wednesdayRadios1" value="option1">
+                      <label class="form-check-label" for="wednesdayRadios1">Veg Meal</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="wednesdayRadios" id="wednesdayRadios2" value="option2">
+                      <label class="form-check-label" for="wednesdayRadios2">Non Veg Meal</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="wednesdayRadios" id="wednesdayRadios3" value="option3">
+                      <label class="form-check-label" for="wednesdayRadios3">Egg Meal</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="wednesdayRadios" id="wednesdayRadios4" value="option4" checked>
+                      <label class="form-check-label" for="wednesdayRadios4">None</label>
+                    </div>
+                    </ul>
+                </ul>
+              </div>
+
+
+
+
+              <div class="form-group col-md-4">
+                <i><h1>Thursday</h1></i>
+                <ul>
+                  <li>Lunch</li>
+                  <ul>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="thursday" id="thursday1" value="option1">
+                      <label class="form-check-label" for="thursday1">Veg Meal</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="thursday" id="thursday2" value="option2">
+                      <label class="form-check-label" for="thursday2">Non Veg Meal</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="thursday" id="thursday3" value="option3">
+                      <label class="form-check-label" for="thursday3">Egg Meal</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="thursday" id="thursday4" value="option4" checked>
+                        <label class="form-check-label" for="thursday4">None</label>
+                    </div>
+                    </ul>
+                    <br>
+                    <br>
+                    <li>Dinner</li>
+                    <ul>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="thursdayRadios" id="thursdayRadios1" value="option1">
+                        <label class="form-check-label" for="thursdayRadios1">Veg Meal</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="thursdayRadios" id="thursdayRadios2" value="option2">
+                        <label class="form-check-label" for="thursdayRadios2">Non Veg Meal</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="thursdayRadios" id="thursdayRadios3" value="option3">
+                        <label class="form-check-label" for="thursdayRadios3">Egg Meal</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="thursdayRadios" id="thursdayRadios4" value="option4" checked>
+                        <label class="form-check-label" for="thursdayRadios4">None</label>
+                      </div>
+                      </ul>
+                  </ul>
+                </div>
+
+
+
+                <div class="form-group col-md-4">
+                  <i><h1>Friday</h1></i>
+                  <ul>
+                    <li>Lunch</li>
+                    <ul>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="friday" id="friday1" value="option1">
+                        <label class="form-check-label" for="friday1">Veg Meal</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="friday" id="friday2" value="option2">
+                        <label class="form-check-label" for="friday2">Non Veg Meal</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="friday" id="friday3" value="option3">
+                        <label class="form-check-label" for="friday3">Egg Meal</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="friday" id="friday4" value="option4" checked>
+                          <label class="form-check-label" for="friday4">None</label>
+                      </div>
+                      </ul>
+                      <br>
+                      <br>
+                      <li>Dinner</li>
+                      <ul>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="fridayRadios" id="fridayRadios1" value="option1">
+                          <label class="form-check-label" for="fridayRadios1">Veg Meal</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="fridayRadios" id="fridayRadios2" value="option2">
+                          <label class="form-check-label" for="fridayRadios2">Non Veg Meal</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="fridayRadios" id="fridayRadios3" value="option3">
+                          <label class="form-check-label" for="fridayRadios3">Egg Meal</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="fridayRadios" id="fridayRadios4" value="option4" checked>
+                          <label class="form-check-label" for="fridayRadios4">None</label>
+                        </div>
+                        </ul>
+                    </ul>
+                  </div>
+
+
+
+
+                  <div class="form-group col-md-4">
+                    <i><h1>Saturday</h1></i>
+                    <ul>
+                      <li>Lunch</li>
+                      <ul>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="saturday" id="saturday1" value="option1">
+                          <label class="form-check-label" for="saturday1">Veg Meal</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="saturday" id="saturday2" value="option2">
+                          <label class="form-check-label" for="saturday2">Non Veg Meal</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="saturday" id="saturday3" value="option3">
+                          <label class="form-check-label" for="saturday3">Egg Meal</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="saturday" id="saturday4" value="option4" checked>
+                            <label class="form-check-label" for="saturday4">None</label>
+                        </div>
+                        </ul>
+                        <br>
+                        <br>
+                        <li>Dinner</li>
+                        <ul>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="saturdayRadios" id="saturdayRadios1" value="option1">
+                            <label class="form-check-label" for="saturdayRadios1">Veg Meal</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="saturdayRadios" id="saturdayRadios2" value="option2">
+                            <label class="form-check-label" for="saturdayRadios2">Non Veg Meal</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="saturdayRadios" id="saturdayRadios3" value="option3">
+                            <label class="form-check-label" for="saturdayRadios3">Egg Meal</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="saturdayRadios" id="saturdayRadios4" value="option4" checked>
+                            <label class="form-check-label" for="saturdayRadios4">None</label>
+                          </div>
+                          </ul>
+                      </ul>
+                    </div>
+
+
+
+
+                    <div class="form-group col-md-4">
+                      <i><h1>Sunday</h1></i>
+                      <ul>
+                        <li>Lunch</li>
+                        <ul>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sunday" id="sunday1" value="option1">
+                            <label class="form-check-label" for="sunday1">Veg Meal</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sunday" id="sunday2" value="option2">
+                            <label class="form-check-label" for="sunday2">Non Veg Meal</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sunday" id="sunday3" value="option3">
+                            <label class="form-check-label" for="sunday3">Egg Meal</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sunday" id="sunday4" value="option4" checked>
+                              <label class="form-check-label" for="sunday4">None</label>
+                          </div>
+                          </ul>
+                          <br>
+                          <br>
+                          <li>Dinner</li>
+                          <ul>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sundayRadios" id="sundayRadios1" value="option1">
+                              <label class="form-check-label" for="sundayRadios1">Veg Meal</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sundayRadios" id="sundayRadios2" value="option2">
+                              <label class="form-check-label" for="sundayRadios2">Non Veg Meal</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sundayRadios" id="sundayRadios3" value="option3">
+                              <label class="form-check-label" for="sundayRadios3">Egg Meal</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sundayRadios" id="sundayRadios4" value="option4" checked>
+                              <label class="form-check-label" for="sundayRadios4">None</label>
+                            </div>
+                            </ul>
+                        </ul>
+                      </div>
+        </div>
+    </div>
+    <button onclick="getValue()" type="button" class="btn btn-light btn-lg">Total Price</button><br>
+    <a href="Confirmation.html"><button type="button" class="btn btn-light btn-lg">Proceed</button></a>
+
+
+    <p>For any Changes
+     Please Contact:123456789</p>
+
+
+  </body>
+</html>

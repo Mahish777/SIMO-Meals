@@ -1,0 +1,114 @@
+.bodyy{
+    background-color: rgb(255, 255, 255);
+    overflow-y: none;
+    overflow-x: visible;
+}
+
+.padding{
+    margin-right: 10px;
+  margin-left: 10px
+
+}
+
+.imagebox{
+    position: relative;
+    width: 100%;
+    
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }  
+
+  .imagebox:hover .overlay {
+    opacity: 1;
+  }
+
+#signup{
+    background-color: #353535;
+    color:white;
+    
+}
+
+#cities{
+    color:#ff5b14;
+    align-items: center;
+    text-align: center;
+}
+
+#how{
+    color:#ff5b14;
+    align-items: center;
+    text-align: center;
+}
+
+#orangebutton{
+    background-color: #ff5b14;
+    color: white;
+    
+    font-size: 30px;
+    width: 200px;
+    height: 60px;
+}
+
+#cards{
+    padding-left: 10%;
+    padding-right: 10%;
+    ;
+}
+
+#subs{
+    background-color:white;
+    border-color: #ff5b14;
+    color: black;
+}
+
+#bluecolor{
+    color: #040847;
+}
+
+#white{
+    background-color:rgb(0, 0, 0);
+    color: white;
+}
+
+#orangebox{
+    background-color: #ff5b14;
+    color: white;
+    text-align-last: center;
+}
+
+#footerfont{
+    font-size: 19px;
+}
+
+.section-testimonials {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}

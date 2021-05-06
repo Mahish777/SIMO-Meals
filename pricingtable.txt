@@ -1,0 +1,85 @@
+
+<div class="card-deck" id="cards">
+  <div class="card" id="subs">
+    <div class="card-footer" id="orangebox">
+      <h5 class="card-title">Basic Subscription</h5>
+    </div>
+    <div class="card-body">
+    
+      <br>
+      <h1>Rs 1999</h1>
+      <br>
+      <p class="card-text">What you get:</p>
+      <ul>
+        <li>
+          <p>Subscription of 2 weeks</p>
+        </li>
+        <li>
+        <p>5 meals in a week (1 meal/day)</p>
+        </li>
+        <li><p>Vegetarian/Eggitarian</p></li>
+        <li>Doorstep Delivery</li>
+        <li>Breakfast/Lunch/Dinner (Choose 1)</li>
+        <li>Meals Cannot be Cancelled</li>
+      </ul>
+    </div>
+    <div class="card-footer" align="center" id="white">
+      
+      <a href="#" id="white">BUY A BASIC SUBSCRIPTION</a>
+    </div>
+  </div>
+  <div class="card" id="subs">
+    <div class="card-footer" id="orangebox">
+      <h5 class="card-title">Standard Subscription</h5>
+    </div>
+    <div class="card-body" >
+      
+      <br>
+      <h1>Rs 4499</h1>
+      <br>
+      <p class="card-text">What you get:</p>
+      <ul>
+        <li>
+          <p>Subscription of 2 weeks</p>
+        </li>
+        <li>
+        <p>5 meals in a week (2 meals/day)</p>
+        </li>
+        <li><p>Vegetarian/Chicken/Eggitarian/Vegan</p></li>
+        <li>Doorstep Delivery</li>
+        <li>Breakfast/Lunch/Dinner (Choose 2)</li>
+        <li>Meals Can be Cancelled 12 hours prior</li>
+      </ul>
+    </div>
+    <div class="card-footer" align="center" id="white">
+      <a href="#" id="white">BUY A STANDARD SUBSCRIPTION</a>
+    </div>
+  </div>
+  <div class="card" id="subs">
+    <div class="card-footer" id="orangebox">
+      <h5 class="card-title">Premium Subscription</h5>
+    </div>
+    <div class="card-body">
+ 
+      <br>
+      <h1>Rs 9499</h1>
+      <br>
+      <p class="card-text">What you get:</p>
+      <ul>
+        <li>
+          <p>Subscription of 4 weeks</p>
+        </li>
+        <li>
+        <p>5 meals in a week (3 meals/day)</p>
+        </li>
+        <li><p>Vegetarian/Chicken/Eggitarian/Vegan</p></li>
+        <li>Doorstep Delivery</li>
+        <li>Breakfast & Lunch & Dinner</li>
+        <li>Meals Can be Cancelled 2 hours prior</li>
+      </ul>
+    </div>
+    <div class="card-footer" align="center" id="white">
+      <a href="#" id="white" >BUY A PREMIUM SUBSCRIPTION</a>
+    </div>
+  </div>
+</div>

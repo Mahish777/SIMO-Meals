@@ -1,0 +1,57 @@
+#jumbo{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.jumbotron-special{
+  background-color: #ff5b14;
+  color: white;
+}
+#back{
+background-color: #000000;
+color: white;
+}
+h1{
+  color: #ff5b14;
+}
+.btn-light{
+  margin-top: 20px;
+  background-color: #ff5b14;
+  color: white;
+  border-color: #ff5b14;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  margin-bottom: auto;
+}
+.btn-light:hover {
+  background-color:#ff5b14;
+  border-color:#ff5b14;
+  color: white;
+  font-size: 23px;
+
+}
+.btn-light:focus {
+  background-color:#ff5b14;
+  border-color:#ff5b14;
+  color:white;
+  opacity: 0.6;
+}
+p{
+  padding-top: 45px;
+  font-size: 15px;
+  color:#4f4f4f;
+  text-align: right;
+}
+.bluetxt,.green{
+  color: #ff5b14;
+  font-weight: bolder;
+}
+a{
+  color: #ff5b14;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: #ff5b14;
+}

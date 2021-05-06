@@ -1,0 +1,43 @@
+#one{
+  text-align: center;
+  color: #ff5b14;
+  padding-top: 15%;
+}
+.jumbotron{
+  text-align: center;
+  background-color: #ff5b14;
+}
+#two{
+  text-align: center;
+  color: #ff5b14;
+}
+.btn{
+  margin-top: 20px;
+  background-color: #ff5b14;
+  color: white;
+  border-color: #ff5b14;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+.btn:hover {
+  background-color:#ff5b14;
+  border-color: #ff5b14;
+  color: white;
+  font-size: 23px;
+}
+.btn:focus {
+  background-color:#ff5b14;
+  border-color:#ff5b14;
+  color:white;
+  opacity: 0.6;
+}
+a{
+  color: #ff5b14;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: #ff5b14;
+}

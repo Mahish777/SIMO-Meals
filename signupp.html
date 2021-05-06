@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Sign Up!</title>
+    <style>
+        h4{
+          text-align: center;
+          }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+        background: seashell;
+        padding-top: 5%;
+      }
+      .row{
+        background: white;
+        border-radius: 30px;
+        box-shadow: 12px 12px 22px grey;
+       }
+      img{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      h1{
+        display: block;
+        max-width: 20%;
+        height: auto;
+      }
+      .btn1{
+        border: none;
+        outline: none;
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      .btn1:hover{
+        background: white;
+        border: 1px solid;
+        color: black;
+      }
+
+
+
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+
+.valid{
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "OK";
+  
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+content: "X";
+  
+}
+
+
+      
+    </style>
+  </head>
+  <body>
+    <section class="Form my-4 mx-5">
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="col-lg-5 no-gutters">
+                <a href="simomealhomepage.html">  <img src="./Fresh and clean.jpg" class="img-fluid" alt=""></a>
+              </div>
+              <div class="col-lg-7 px-5 pt-5">
+
+                <h4>Sign Up here to Join Us!</h4><br>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" id="First" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" id="Last" placeholder="Last Name" required>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-row">
+                    <div class="form-group col-md-2">
+                      <input type="number" class="form-control" id="Last" placeholder="+91" disabled>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input type="text" class="form-control" id="Last" placeholder="Contact Number"  maxlength="10" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" id="Last" placeholder="College Roll Number"  maxlength="10" required>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Email ID" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="password" id="psw" name="psw" class="form-control" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                  </div></div>
+                  <div id="message">
+                   
+                    <h6>Password does not match the following requirments, it must contain the following:</h6>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                  </div>
+                  
+                  <br><br>
+                  <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <select class="form-control" id="exampleFormControlSelect1" required>
+                      <option>Select Hostel Wing</option>
+                      <option>Wing A</option>
+                      <option>Wing B</option>
+                      <option>Wing C</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Hostel Room Number" maxlength="3" required>
+                  </div>
+                </div>
+                  <br>
+                <br>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-warning btn-lg" formaction="login.html">Sign Up</button>
+                </div>
+                <br><br>
+                </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <script>
+    var myInput = document.getElementById("psw");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+    
+    
+    
+    myInput.onfocusin = function() {
+      document.getElementById("message").style.display = "block";
+    }
+    
+    myInput.onfocusout = function() {
+      document.getElementById("message").style.display = "none";
+    }
+ 
+    
+ 
+    myInput.onkeyup = function() {
+    
+      var lowerCaseLetters = /[a-z]/g;
+      if(myInput.value.match(lowerCaseLetters)) {
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+    }
+    
+      var upperCaseLetters = /[A-Z]/g;
+      if(myInput.value.match(upperCaseLetters)) {
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+      } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+      }
+    
+      
+      var numbers = /[0-9]/g;
+      if(myInput.value.match(numbers)) {
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+      } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+      }
+    
+     
+      if(myInput.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+      } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+      }
+    }
+    </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

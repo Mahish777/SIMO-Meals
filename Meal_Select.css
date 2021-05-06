@@ -1,0 +1,70 @@
+h1{
+  text-align: center;
+}
+
+img{
+
+    object-fit: cover;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+h2{
+  text-align: center;
+  color:#ff5b14;
+}
+sub{
+  font-size: 10px;
+  color:#4f4f4f;
+}
+
+.jumbotron{
+  background-color:#ff5b14;
+}
+#jumbo{
+  background-color: white;
+}
+#one,#two,#three{
+  color:#ff5b14;
+  font-size: 30px;
+}
+
+.btn{
+  margin-top: 20px;
+  background-color: #ff5b14;
+  color: white;
+  border-color: #ff5b14;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+.btn:hover {
+  background-color:#ff5b14;
+  border-color: #ff5b14;
+  color: white;
+  font-size: 23px;
+
+}
+.btn:focus {
+  background-color:#ff5b14;
+  border-color:#ff5b14;
+  color:white;
+  opacity: 0.6;
+}
+
+
+a{
+  color: #ff5b14;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: #ff5b14;
+}
